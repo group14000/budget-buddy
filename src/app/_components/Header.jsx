@@ -36,7 +36,7 @@ const Header = () => {
                 text="Transactions"
                 toggleMenu={toggleMenu}
               />
-              <MenuLink href={"#"} text="Add Expense" toggleMenu={toggleMenu}>
+              <MenuLink href={"/expense"} text="Add Expense" toggleMenu={toggleMenu}>
                 <Plus className="ml-1" />
               </MenuLink>
               <li></li>
@@ -59,7 +59,7 @@ const Header = () => {
             <div className="hidden lg:flex">
               <MenuLink href={"/"} text="Dashboard" />
               <MenuLink href={"#"} text="Transactions" />
-              <MenuLink href={"#"} text="Add Expense">
+              <MenuLink href={"/expense"} text="Add Expense">
                 <Plus className="ml-1" />
               </MenuLink>
               {isSignedIn && (
